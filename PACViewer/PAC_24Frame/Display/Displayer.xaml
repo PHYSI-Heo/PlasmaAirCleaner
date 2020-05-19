@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="PAC_24Frame.Display.Displayer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PAC_24Frame.Display"
+             mc:Ignorable="d" 
+             d:DesignHeight="1920" d:DesignWidth="1080" Width="1920" Height="1080">
+    <Grid>
+        <MediaElement x:Name="mPlayer" LoadedBehavior="Manual" Width="1920" Height="1080" Visibility="Collapsed" MediaOpened="mPlayer_MediaOpened" MediaEnded="mPlayer_MediaEnded"/>
+        <Image x:Name="iViewer"  Width="1920" Height="1080" Visibility="Collapsed"/>
+        <Canvas x:Name="Cv_Cover" Background="Black" Width="1920" Height="1080" Visibility="Collapsed"/>
+    </Grid>
+</UserControl>

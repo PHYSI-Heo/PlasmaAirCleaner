@@ -1,0 +1,31 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:PAC_7Frame"
+        xmlns:Display="clr-namespace:PAC_7Frame.Display" x:Class="PAC_7Frame.MainWindow"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Topmost="True"
+        ContentRendered="Window_ContentRendered"    
+        Title="MainWindow" ShowInTaskbar="False" Width="1024" Height="600" ResizeMode="NoResize" WindowStyle="None">
+
+    <Grid x:Name="MainFrame" Width="1024" Height="600" 
+          VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid.Background>
+            <ImageBrush ImageSource="Res/img_logo.png"/>
+        </Grid.Background>
+
+        <Display:Displayer x:Name="Dp_Image" HorizontalAlignment="Left" VerticalAlignment="Top" Height="600" Width="1024"/>
+        <local:ProgressMessage x:Name="Pg_Loading" HorizontalAlignment="Center" Height="56" Width="256" VerticalAlignment="Top" Visibility="Collapsed"/>
+
+        <WindowsFormsHost x:Name="Wfh_CCTV" Grid.Column="0" Width="1024" Height="600" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Visibility="Collapsed" Background="Black">
+            <wf:PictureBox x:Name="Pb_CCTV" />
+        </WindowsFormsHost>
+
+    </Grid>
+
+</Window>

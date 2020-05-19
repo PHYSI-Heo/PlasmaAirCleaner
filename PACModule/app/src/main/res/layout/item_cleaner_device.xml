@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="4dp"
+    android:background="@drawable/list_item_shape"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/iv_btn_delete"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/list_btn_circle_basic"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"/>
+
+    <ImageView
+        android:id="@+id/iv_btn_control"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/list_btn_circle_effect"
+        android:src="@drawable/ic_connect"
+        android:layout_toStartOf="@id/iv_btn_delete"
+        android:layout_marginEnd="8dp"/>
+
+    <ImageView
+        android:id="@+id/iv_btn_edit_name"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/list_btn_circle_effect"
+        android:src="@drawable/ic_edit"
+        android:layout_toStartOf="@id/iv_btn_control"
+        android:layout_marginEnd="8dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_cleaner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/iv_btn_control"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        tools:text="DEVICE NAME"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:padding="8dp"/>
+
+</RelativeLayout>

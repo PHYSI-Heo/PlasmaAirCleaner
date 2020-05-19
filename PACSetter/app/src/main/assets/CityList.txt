@@ -1,0 +1,1166 @@
+[
+	{
+		"name": "서울특별시",
+		"code": "Seoul__Metropolitan__City",
+		"gugun":
+		[
+			{
+				"name": "종로구",
+				"code": "Jongno_district"
+			},
+			{
+				"name": "중구",
+				"code": "Jung_district"
+			},
+			{
+				"name": "용산구",
+				"code": "Yongsan_district"
+			},
+			{
+				"name": "성동구",
+				"code": "Seongdong_district"
+			},
+			{
+				"name": "광진구",
+				"code": "Gwangjin_district"
+			},
+			{
+				"name": "동대문구",
+				"code": "Dongdaemun_district"
+			},
+			{
+				"name": "중랑구",
+				"code": "Jungnang_district"
+			},
+			{
+				"name": "성북구",
+				"code": "Seongbuk_district"
+			},
+			{
+				"name": "강북구",
+				"code": "Gangbuk_district"
+			},
+			{
+				"name": "도봉구",
+				"code": "Dobong_district"
+			},
+			{
+				"name": "노원구",
+				"code": "Nowon_district"
+			},
+			{
+				"name": "은평구",
+				"code": "Eunpyeong_district"
+			},
+			{
+				"name": "서대문구",
+				"code": "Seodaemun_district"
+			},
+			{
+				"name": "마포구",
+				"code": "Mapo_district"
+			},
+			{
+				"name": "양천구",
+				"code": "Yangcheon_district"
+			},
+			{
+				"name": "강서구",
+				"code": "Gangseo_district"
+			},
+			{
+				"name": "구로구",
+				"code": "Guro_district"
+			},
+			{
+				"name": "금천구",
+				"code": "Gumcheon_district"
+			},
+			{
+				"name": "영등포구",
+				"code": "Yeongdeungpo_district"
+			},
+			{
+				"name": "동작구",
+				"code": "Dongjak_district"
+			},
+			{
+				"name": "관악구",
+				"code": "Gwanak_district"
+			},
+			{
+				"name": "서초구",
+				"code": "Seocho_district"
+			},
+			{
+				"name": "강남구",
+				"code": "Gangnam_district"
+			},
+			{
+				"name": "송파구",
+				"code": "Songpa_district"
+			},
+			{
+				"name": "강동구",
+				"code": "Gangdong_distrcit"
+			}
+		]
+	},
+	{
+		"name": "부산광역시",
+		"code": "Busan__Metropolitan__City",
+		"gugun":
+		[
+			{
+				"name": "중구",
+				"code": "Jung_district"
+			},
+			{
+				"name": "서구",
+				"code": "Seo_distrcit"
+			},
+			{
+				"name": "동구",
+				"code": "Dong_district"
+			},
+			{
+				"name": "영도구",
+				"code": "Yeongdo_district"
+			},
+			{
+				"name": "부산진구",
+				"code": "Busanjin_district"
+			},
+			{
+				"name": "동래구",
+				"code": "Dongnae_district"
+			},
+			{
+				"name": "남구",
+				"code": "Nam_district"
+			},
+			{
+				"name": "북구",
+				"code": "Buk_district"
+			},
+			{
+				"name": "해운대구",
+				"code": "Haeundae_district"
+			},
+			{
+				"name": "사하구",
+				"code": "Saha_district"
+			},
+			{
+				"name": "금정구",
+				"code": "Geumjeong_district"
+			},
+			{
+				"name": "강서구",
+				"code": "Gangseo_district"
+			},
+			{
+				"name": "연제구",
+				"code": "Yeonje_district"
+			},
+			{
+				"name": "수영구",
+				"code": "Suyeong_district"
+			},
+			{
+				"name": "사상구",
+				"code": "Sasang_district"
+			},
+			{
+				"name": "기장군",
+				"code": "Gijang_county"
+			}
+		]
+	},
+	{
+		"name": "대구광역시",
+		"code": "Daegu__Metropolitan__City",
+		"gugun":
+		[
+			{
+				"name": "중구",
+				"code": "Jung_district"
+			},
+			{
+				"name": "동구",
+				"code": "Dong_district"
+			},
+			{
+				"name": "서구",
+				"code": "Seo_district"
+			},
+			{
+				"name": "남구",
+				"code": "Nam_district"
+			},
+			{
+				"name": "북구",
+				"code": "Buk_district"
+			},
+			{
+				"name": "수성구",
+				"code": "Suseong_district"
+			},
+			{
+				"name": "달서구",
+				"code": "Dalseo_district"
+			},
+			{
+				"name": "달성군",
+				"code": "Dalseong_county"
+			}
+		]
+	},
+	{
+		"name": "인천광역시",
+		"code": "Incheon_Metropolitan_City",
+		"gugun":
+		[
+			{
+				"name": "중구",
+				"code": "Jung_district"
+			},
+			{
+				"name": "동구",
+				"code": "Dong_district"
+			},
+			{
+				"name": "남구",
+				"code": "Nam_district"
+			},
+			{
+				"name": "연수구",
+				"code": "Yeonsu_district"
+			},
+			{
+				"name": "남동구",
+				"code": "Namdong_district"
+			},
+			{
+				"name": "부평구",
+				"code": "Bupyeong_district"
+			},
+			{
+				"name": "계양구",
+				"code": "Gyeyang_district"
+			},
+			{
+				"name": "서구",
+				"code": "Seo_district"
+			},
+			{
+				"name": "강화군",
+				"code": "Ganghwa_county"
+			},
+			{
+				"name": "옹진군",
+				"code": "Ongjin_county"
+			}
+		]
+	},
+	{
+		"name": "광주광역시",
+		"code": "Gwangju_Metropolitan_City",
+		"gugun":
+		[
+			{
+				"name": "동구",
+				"code": "Dong_district"
+			},
+			{
+				"name": "서구",
+				"code": "Seo_district"
+			},
+			{
+				"name": "남구",
+				"code": "Nam_district"
+			},
+			{
+				"name": "북구",
+				"code": "Buk_district"
+			},
+			{
+				"name": "광산구",
+				"code": "Gwangsan_district"
+			}
+		]
+	},
+	{
+		"name": "대전광역시",
+		"code": "Daejeon_Metropolitan_City",
+		"gugun":
+		[
+			{
+				"name": "동구",
+				"code": "Dong_district"
+			},
+			{
+				"name": "중구",
+				"code": "Jung_district"
+			},
+			{
+				"name": "서구",
+				"code": "Seo_district"
+			},
+			{
+				"name": "유성구",
+				"code": "Yuseong_district"
+			},
+			{
+				"name": "대덕구",
+				"code": "Daedeok_district"
+			}
+		]
+	},
+	{
+		"name": "울산광역시",
+		"code": "Ulsan_Metropolitan_city",
+		"gugun":
+		[
+			{
+				"name": "중구",
+				"code": "Jung_district"
+			},
+			{
+				"name": "남구",
+				"code": "Nam_district"
+			},
+			{
+				"name": "동구",
+				"code": "Dong_district"
+			},
+			{
+				"name": "북구",
+				"code": "Buk_district"
+			},
+			{
+				"name": "울주군",
+				"code": "Ulju_county"
+			}
+		]
+	},
+	{
+		"name": "경기도",
+		"code": "Gyeonggi_Province",
+		"gugun":
+		[
+			{
+				"name": "수원시",
+				"code": "Suwon_city"
+			},
+			{
+				"name": "장안구",
+				"code": "Jangan_district"
+			},
+			{
+				"name": "권선구",
+				"code": "Gwonseon_district"
+			},
+			{
+				"name": "팔달구",
+				"code": "Paldal_district"
+			},
+			{
+				"name": "영통구",
+				"code": "Yeongtong_district"
+			},
+			{
+				"name": "성남시",
+				"code": "Seongnam_city"
+			},
+			{
+				"name": "수정구",
+				"code": "Sujeong_district"
+			},
+			{
+				"name": "중원구",
+				"code": "Jungwon_district"
+			},
+			{
+				"name": "분당구",
+				"code": "Bundang_district"
+			},
+			{
+				"name": "의정부시",
+				"code": "Uijeongbu_city"
+			},
+			{
+				"name": "안양시",
+				"code": "Anyang_city"
+			},
+			{
+				"name": "만안구",
+				"code": "Manan_district"
+			},
+			{
+				"name": "동안구",
+				"code": "Dongan_district"
+			},
+			{
+				"name": "부천시",
+				"code": "Bucheon_city"
+			},
+			{
+				"name": "원미구",
+				"code": "Wonmi_district"
+			},
+			{
+				"name": "소사구",
+				"code": "Sosa_district"
+			},
+			{
+				"name": "오정구",
+				"code": "Ojeong_district"
+			},
+			{
+				"name": "광명시",
+				"code": "Gwangmyeong_city"
+			},
+			{
+				"name": "평택시",
+				"code": "Pyeongtaek_city"
+			},
+			{
+				"name": "동두천시",
+				"code": "Dongducheon_city"
+			},
+			{
+				"name": "안산시",
+				"code": "Ansan_city"
+			},
+			{
+				"name": "상록구",
+				"code": "Sangnok_district"
+			},
+			{
+				"name": "단원구",
+				"code": "Danwon_district"
+			},
+			{
+				"name": "고양시",
+				"code": "Goyang_city"
+			},
+			{
+				"name": "덕양구",
+				"code": "Deogyang_district"
+			},
+			{
+				"name": "일산서구",
+				"code": "Ilsanseo_district"
+			},
+			{
+				"name": "일산동구",
+				"code": "Ilsandong_district"
+			},
+			{
+				"name": "과천시",
+				"code": "Gwacheon_city"
+			},
+			{
+				"name": "구리시",
+				"code": "Guri_city"
+			},
+			{
+				"name": "남양주시",
+				"code": "Namyangju_city"
+			},
+			{
+				"name": "오산시",
+				"code": "Osan_city"
+			},
+			{
+				"name": "시흥시",
+				"code": "Siheung_city"
+			},
+			{
+				"name": "군포시",
+				"code": "Gunpo_city"
+			},
+			{
+				"name": "의왕시",
+				"code": "Uiwang_city"
+			},
+			{
+				"name": "하남시",
+				"code": "Hanam__city"
+			},
+			{
+				"name": "용인시",
+				"code": "Yongin_city"
+			},
+			{
+				"name": "처인구",
+				"code": "Cheoin_district"
+			},
+			{
+				"name": "기흥구",
+				"code": "Giheung_district"
+			},
+			{
+				"name": "수지구",
+				"code": "Suji_district"
+			},
+			{
+				"name": "파주시",
+				"code": "Paju_city"
+			},
+			{
+				"name": "이천시",
+				"code": "Icheon_city"
+			},
+			{
+				"name": "안성시",
+				"code": "Anseong_city"
+			},
+			{
+				"name": "김포시",
+				"code": "Gimpo_city"
+			},
+			{
+				"name": "화성시",
+				"code": "Hwaseong_city"
+			},
+			{
+				"name": "광주시",
+				"code": "Gwangju_city"
+			},
+			{
+				"name": "양주시",
+				"code": "Yangju_city"
+			},
+			{
+				"name": "포천시",
+				"code": "Pocheon_city"
+			},
+			{
+				"name": "여주군",
+				"code": "Yeoju_county"
+			},
+			{
+				"name": "연천군",
+				"code": "Yeoncheon_county"
+			},
+			{
+				"name": "가평군",
+				"code": "Gapyeong_county"
+			},
+			{
+				"name": "양평군",
+				"code": "Yangpyeong_county"
+			}
+		]
+	},
+	{
+		"name": "강원도",
+		"code": "Gangwon_Province",
+		"gugun":
+		[
+			{
+				"name": "춘천시",
+				"code": "Chuncheon_city"
+			},
+			{
+				"name": "원주시",
+				"code": "Wonju_city"
+			},
+			{
+				"name": "강릉시",
+				"code": "Gangneung_city"
+			},
+			{
+				"name": "동해시",
+				"code": "Donghae_city"
+			},
+			{
+				"name": "태백시",
+				"code": "Taebaek_city"
+			},
+			{
+				"name": "속초시",
+				"code": "Sokcho_city"
+			},
+			{
+				"name": "삼척시",
+				"code": "Samcheok_city"
+			},
+			{
+				"name": "홍천군",
+				"code": "Hongcheon_county"
+			},
+			{
+				"name": "횡성군",
+				"code": "Hoengseong_county"
+			},
+			{
+				"name": "영월군",
+				"code": "Yeongwol_county"
+			},
+			{
+				"name": "평창군",
+				"code": "Pyongchang_county"
+			},
+			{
+				"name": "정선군",
+				"code": "Jeongseon_county"
+			},
+			{
+				"name": "철원군",
+				"code": "Cheorwon_county"
+			},
+			{
+				"name": "화천군",
+				"code": "Hwacheon_county"
+			},
+			{
+				"name": "양구군",
+				"code": "Yanggu_county"
+			},
+			{
+				"name": "인제군",
+				"code": "Inje_county"
+			},
+			{
+				"name": "고성군",
+				"code": "Goseong_county"
+			},
+			{
+				"name": "양양군",
+				"code": "Yangyang_county"
+			}
+		]
+	},
+	{
+		"name": "충청북도",
+		"code": "Chungcheongbuk_Province",
+		"gugun":
+		[
+			{
+				"name": "청주시",
+				"code": "Cheongju_city"
+			},
+			{
+				"name": "상당구",
+				"code": "Sangdang_district"
+			},
+			{
+				"name": "흥덕구",
+				"code": "Heungdeok_district"
+			},
+			{
+				"name": "충주시",
+				"code": "Chungju_city"
+			},
+			{
+				"name": "제천시",
+				"code": "Jecheon_city"
+			},
+			{
+				"name": "청원군",
+				"code": "Cheongwon_county"
+			},
+			{
+				"name": "보은군",
+				"code": "Boeun_county"
+			},
+			{
+				"name": "옥천군",
+				"code": "Okcheon_county"
+			},
+			{
+				"name": "영동군",
+				"code": "Yeongdong_county"
+			},
+			{
+				"name": "증평군",
+				"code": "Jeungpyeong__county"
+			},
+			{
+				"name": "진천군",
+				"code": "Jincheon_county"
+			},
+			{
+				"name": "괴산군",
+				"code": "Goesan_county"
+			},
+			{
+				"name": "음성군",
+				"code": "Umseong_county"
+			},
+			{
+				"name": "단양군",
+				"code": "Danyang_county"
+			}
+		]
+	},
+	{
+		"name": "충청남도",
+		"code": "Chungcheongnam_Province",
+		"gugun":
+		[
+			{
+				"name": "천안시",
+				"code": "Cheonan_city"
+			},
+			{
+				"name": "동남구",
+				"code": "Dongnam_district"
+			},
+			{
+				"name": "서북구",
+				"code": "Sebuk_district"
+			},
+			{
+				"name": "공주시",
+				"code": "Gongju_city"
+			},
+			{
+				"name": "보령시",
+				"code": "Boryeong_city"
+			},
+			{
+				"name": "아산시",
+				"code": "Asan_city"
+			},
+			{
+				"name": "서산시",
+				"code": "Seosan_city"
+			},
+			{
+				"name": "논산시",
+				"code": "Nonsan_city"
+			},
+			{
+				"name": "계룡시",
+				"code": "Gyeryong_city"
+			},
+			{
+				"name": "금산군",
+				"code": "Gumsan_county"
+			},
+			{
+				"name": "연기군",
+				"code": "Yeongi_county"
+			},
+			{
+				"name": "부여군",
+				"code": "Buyeo_county"
+			},
+			{
+				"name": "서천군",
+				"code": "Socheon_county"
+			},
+			{
+				"name": "청양군",
+				"code": "Cheongyang_county"
+			},
+			{
+				"name": "홍성군",
+				"code": "Hongseong_county"
+			},
+			{
+				"name": "예산군",
+				"code": "Yesan_county"
+			},
+			{
+				"name": "태안군",
+				"code": "Taean_county"
+			},
+			{
+				"name": "당진군",
+				"code": "Dangjin_county"
+			}
+		]
+	},
+	{
+		"name": "전라북도",
+		"code": "Jeollabuk_Province",
+		"gugun":
+		[
+			{
+				"name": "전주시",
+				"code": "Jeonju_city"
+			},
+			{
+				"name": "완산구",
+				"code": "Wansan_district"
+			},
+			{
+				"name": "덕진구",
+				"code": "Deokjin_district"
+			},
+			{
+				"name": "군산시",
+				"code": "Gunsan_city"
+			},
+			{
+				"name": "익산시",
+				"code": "Iksan_city"
+			},
+			{
+				"name": "정읍시",
+				"code": "Jeongeup_city"
+			},
+			{
+				"name": "남원시",
+				"code": "Namwon_city"
+			},
+			{
+				"name": "김제시",
+				"code": "Gimje_city"
+			},
+			{
+				"name": "완주군",
+				"code": "Wanju_county"
+			},
+			{
+				"name": "진안군",
+				"code": "Jinan_county"
+			},
+			{
+				"name": "무주군",
+				"code": "Muju_county"
+			},
+			{
+				"name": "장수군",
+				"code": "Jangsu_county"
+			},
+			{
+				"name": "임실군",
+				"code": "Imsil_county"
+			},
+			{
+				"name": "순창군",
+				"code": "Sunchang_county"
+			},
+			{
+				"name": "고창군",
+				"code": "Gochang_county"
+			},
+			{
+				"name": "부안군",
+				"code": "Buan_county"
+			}
+		]
+	},
+	{
+		"name": "전라남도",
+		"code": "Jeollanam_Province",
+		"gugun":
+		[
+			{
+				"name": "목포시",
+				"code": "Mokpo_city"
+			},
+			{
+				"name": "여수시",
+				"code": "Yeosu_city"
+			},
+			{
+				"name": "순천시",
+				"code": "Suncheon_city"
+			},
+			{
+				"name": "나주시",
+				"code": "Naju_city"
+			},
+			{
+				"name": "광양시",
+				"code": "Gwangyang_city"
+			},
+			{
+				"name": "담양군",
+				"code": "Damyang_county"
+			},
+			{
+				"name": "곡성군",
+				"code": "Gokseong_county"
+			},
+			{
+				"name": "구례군",
+				"code": "Gurye_county"
+			},
+			{
+				"name": "고흥군",
+				"code": "Goheung_county"
+			},
+			{
+				"name": "보성군",
+				"code": "Boseong_county"
+			},
+			{
+				"name": "화순군",
+				"code": "Hwasun_county"
+			},
+			{
+				"name": "장흥군",
+				"code": "Jangheung_county"
+			},
+			{
+				"name": "강진군",
+				"code": "Gangjin_county"
+			},
+			{
+				"name": "해남군",
+				"code": "Haenam_county"
+			},
+			{
+				"name": "영암군",
+				"code": "Yeongam_county"
+			},
+			{
+				"name": "무안군",
+				"code": "Muan_county"
+			},
+			{
+				"name": "함평군",
+				"code": "Hampyeong_county"
+			},
+			{
+				"name": "영광군",
+				"code": "Yeonggwang_county"
+			},
+			{
+				"name": "장성군",
+				"code": "Jangseong_county"
+			},
+			{
+				"name": "완도군",
+				"code": "Wando_county"
+			},
+			{
+				"name": "진도군",
+				"code": "Jindo_county"
+			},
+			{
+				"name": "신안군",
+				"code": "Sinan_county"
+			}
+		]
+	},
+	{
+		"name": "경상북도",
+		"code": "Gyeongsangbuk_Province",
+		"gugun":
+		[
+			{
+				"name": "포항시",
+				"code": "Pohang_city"
+			},
+			{
+				"name": "남구",
+				"code": "Nam_district"
+			},
+			{
+				"name": "북구",
+				"code": "Buk_district"
+			},
+			{
+				"name": "경주시",
+				"code": "Gyeongju_city"
+			},
+			{
+				"name": "김천시",
+				"code": "Gimcheon_city"
+			},
+			{
+				"name": "안동시",
+				"code": "Andong_city"
+			},
+			{
+				"name": "구미시",
+				"code": "Gumi_city"
+			},
+			{
+				"name": "영주시",
+				"code": "Yeongju_city"
+			},
+			{
+				"name": "영천시",
+				"code": "Yeongcheon_city"
+			},
+			{
+				"name": "상주시",
+				"code": "Sangju_city"
+			},
+			{
+				"name": "문경시",
+				"code": "Mungyeong_city"
+			},
+			{
+				"name": "경산시",
+				"code": "Gyeongsan_city"
+			},
+			{
+				"name": "군위군",
+				"code": "Gunwi_county"
+			},
+			{
+				"name": "의성군",
+				"code": "Uiseong_county"
+			},
+			{
+				"name": "청송군",
+				"code": "Cheongsong_county"
+			},
+			{
+				"name": "영양군",
+				"code": "Yeongyang_county"
+			},
+			{
+				"name": "영덕군",
+				"code": "Yeongdeok_county"
+			},
+			{
+				"name": "청도군",
+				"code": "Cheongdo_county"
+			},
+			{
+				"name": "고령군",
+				"code": "Goryeong_county"
+			},
+			{
+				"name": "성주군",
+				"code": "Seongju_county"
+			},
+			{
+				"name": "칠곡군",
+				"code": "Chilgok_county"
+			},
+			{
+				"name": "예천군",
+				"code": "Yecheon_county"
+			},
+			{
+				"name": "봉화군",
+				"code": "Bonghwa_county"
+			},
+			{
+				"name": "울진군",
+				"code": "Uljin_county"
+			},
+			{
+				"name": "울릉군",
+				"code": "Ulleung_county"
+			}
+		]
+	},
+	{
+		"name": "경상남도",
+		"code": "Gyeongsangnam_province",
+		"gugun":
+		[
+			{
+				"name": "창원시",
+				"code": "Changwon_city"
+			},
+			{
+				"name": "의창구",
+				"code": "Uichang_district"
+			},
+			{
+				"name": "성산구",
+				"code": "Seongsan_district"
+			},
+			{
+				"name": "마산합포구",
+				"code": "Masanhappo_district"
+			},
+			{
+				"name": "마산회원구",
+				"code": "Masanhoewon_district"
+			},
+			{
+				"name": "진해구",
+				"code": "Jinhae_district"
+			},
+			{
+				"name": "진주시",
+				"code": "Jinju_city"
+			},
+			{
+				"name": "통영시",
+				"code": "Tongyeong_city"
+			},
+			{
+				"name": "사천시",
+				"code": "Sacheon_city"
+			},
+			{
+				"name": "김해시",
+				"code": "Gimhae_city"
+			},
+			{
+				"name": "밀양시",
+				"code": "Miryang_city"
+			},
+			{
+				"name": "거제시",
+				"code": "Geoje_city"
+			},
+			{
+				"name": "양산시",
+				"code": "Yangsan_city"
+			},
+			{
+				"name": "의령군",
+				"code": "Uiryeong_county"
+			},
+			{
+				"name": "함안군",
+				"code": "Haman_county"
+			},
+			{
+				"name": "창녕군",
+				"code": "Changnyeong_county"
+			},
+			{
+				"name": "고성군",
+				"code": "Goseong_county"
+			},
+			{
+				"name": "남해군",
+				"code": "Namhae_county"
+			},
+			{
+				"name": "하동군",
+				"code": "Hadong_county"
+			},
+			{
+				"name": "산청군",
+				"code": "Sancheong_county"
+			},
+			{
+				"name": "함양군",
+				"code": "Hamyang_county"
+			},
+			{
+				"name": "거창군",
+				"code": "Geochang_county"
+			},
+			{
+				"name": "합천군",
+				"code": "Hapcheon_county"
+			}
+		]
+	},
+	{
+		"name": "제주특별자치도",
+		"code": "Jeju_province",
+		"gugun":
+		[
+			{
+				"name": "제주시",
+				"code": "Jeju_city"
+			},
+			{
+				"name": "서귀포시",
+				"code": "Seogwipo_city"
+			}
+		]
+	}
+]

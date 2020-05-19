@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAC_24Frame", "PAC_24Frame\PAC_24Frame.csproj", "{45BF0854-F967-4B6A-A8C7-B27B699E6D3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAC_7Frame", "PAC_7Frame\PAC_7Frame.csproj", "{6DB03DD5-7476-4ADF-9E4C-AA76C94DD05E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45BF0854-F967-4B6A-A8C7-B27B699E6D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45BF0854-F967-4B6A-A8C7-B27B699E6D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45BF0854-F967-4B6A-A8C7-B27B699E6D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45BF0854-F967-4B6A-A8C7-B27B699E6D3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DB03DD5-7476-4ADF-9E4C-AA76C94DD05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DB03DD5-7476-4ADF-9E4C-AA76C94DD05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DB03DD5-7476-4ADF-9E4C-AA76C94DD05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DB03DD5-7476-4ADF-9E4C-AA76C94DD05E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D70AC045-3974-4D38-BA70-16922702F674}
+	EndGlobalSection
+EndGlobal

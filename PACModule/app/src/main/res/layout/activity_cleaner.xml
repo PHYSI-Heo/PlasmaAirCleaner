@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_frame"
+    android:background="@drawable/bg_anim_gradation"
+    tools:context=".CleanerActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_btn_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="32dp"
+        android:paddingBottom="24dp">
+
+        <Button
+            android:id="@+id/btn_auto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AUTO"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:drawableTop="@drawable/ic_auto_off"
+            android:background="@drawable/btn_circle_basic"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_fan_power"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="POWER"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:drawableTop="@drawable/ic_power_off"
+            android:background="@drawable/btn_circle_basic"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            tools:ignore="ButtonStyle" />
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_auto"-->
+<!--            android:layout_width="156dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableTop="@drawable/ic_auto_off"-->
+<!--            android:background="@drawable/btn_circle_basic"-->
+<!--            android:text="AUTO"-->
+<!--            android:layout_marginStart="32dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:padding="16dp"-->
+<!--            tools:ignore="ButtonStyle" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_fan_power"-->
+<!--            android:layout_width="156dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableTop="@drawable/ic_power_off"-->
+<!--            android:background="@drawable/btn_circle_basic"-->
+<!--            android:text="POWER"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="32dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:padding="16dp"-->
+<!--            tools:ignore="ButtonStyle" />-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back"
+        android:padding="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_cleaner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:text="DEVICE NAME"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_btn_control"
+        android:layout_below="@id/tv_cleaner_name">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_data_frame"/>
+
+        <TextView
+            android:id="@+id/tv_voc_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="64sp"
+            tools:text="123.45"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOC"
+            android:textSize="20sp"
+            android:textColor="@color/colorMenuBasic"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/tv_voc_value"/>
+
+        <TextView
+            android:id="@+id/tv_state_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATUS"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorMenuBasic"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_voc_value"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_state_bar"
+            android:layout_width="56dp"
+            android:layout_height="5dp"
+            android:layout_below="@id/tv_state_msg"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorMenuBasic"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

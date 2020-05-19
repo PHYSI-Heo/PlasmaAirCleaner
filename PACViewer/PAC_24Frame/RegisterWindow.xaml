@@ -1,0 +1,18 @@
+﻿<Window x:Class="PAC_24Frame.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PAC_24Frame"
+        mc:Ignorable="d"
+        Topmost="True"
+        Title="RegisterWindow" Height="178" Width="498" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid Width="498" Height="178">
+        <TextBlock x:Name="Tb_Title" Text="제품코드 생성" FontSize="18" FontWeight="Bold" Margin="32,24,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  />
+        <TextBlock x:Name="Tb_Explain" Text="스마트폰 &amp; 서비스 서버와 연동을 위한 제품코드를 생성합니다." FontWeight="Bold" Canvas.Top="56" Margin="36,56,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="11" Foreground="DarkSlateGray"/>
+        <TextBox x:Name="Tb_ProductCode" TextWrapping="Wrap" Width="434" IsReadOnly="True" Canvas.Top="88" Height="32" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="33,82,0,0" />
+        <Button x:Name="Btn_Register" Content="Register" Canvas.Top="132" Canvas.Right="0" Width="113" Height="32" FontWeight="Bold" FontSize="14" Click="Btn_Register_Click" HorizontalAlignment="Left" Margin="354,125,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Btn_Create" Content="Create" Width="114" Height="32" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="227,125,0,0" VerticalAlignment="Top" Click="Btn_Create_Click"/>
+
+    </Grid>
+</Window>

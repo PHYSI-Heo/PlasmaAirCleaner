@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="PAC_7Frame.ProgressMessage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PAC_7Frame"
+             mc:Ignorable="d" 
+             d:DesignHeight="56" d:DesignWidth="256" Height="56" Width="256">
+    <Grid Height="56" Width="256" Background="White" Opacity="0.5">
+        <ProgressBar HorizontalAlignment="Left" Height="8" Width="256" VerticalAlignment="Bottom" IsIndeterminate="True" FontSize="11" />
+        <TextBlock x:Name="Tb_Message" Width="256" HorizontalAlignment="Center" Text="Setting.." TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,8" FontSize="14" FontWeight="Bold"/>
+    </Grid>
+</UserControl>

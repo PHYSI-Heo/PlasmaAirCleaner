@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#778EE2</color>
+    <color name="colorPrimaryDark">#345bdb</color>
+    <color name="colorAccent">#5F85FC</color>
+
+
+    <color name="colorButtonEffect">#59F52F</color>
+    <color name="colorButtonBasic">#D3D3D3</color>
+
+    <color name="colorMenuEffect">#B1C9F0</color>
+    <color name="colorMenuBasic">#EEEEEE</color>
+
+
+    <color name="colorFanState0">#59F52F</color>
+    <color name="colorFanState1">#FFD028</color>
+    <color name="colorFanState2">#FF8210</color>
+    <color name="colorFanState3">#DA1D1D</color>
+
+</resources>

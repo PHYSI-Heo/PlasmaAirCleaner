@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_frame"
+    android:background="@drawable/bg_anim_gradation"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_logo"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="88dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="104dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_corner_basic"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentEnd="true"
+            android:text="등록"
+            android:textSize="12sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_device"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_register"/>
+
+        <TextView
+            android:id="@+id/tv_list_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_register"
+            android:text="등록된 디바이스가 없습니다."
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
