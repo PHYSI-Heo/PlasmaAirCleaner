@@ -181,13 +181,15 @@ namespace PAC_24Frame
 
         private bool CheckProductCode()
         {
-            if(SystemEnv.GetProductKey() == "0")
+            string productKey = SystemEnv.GetProductKey();
+            if (productKey == "0")
             {
                 RegisterWindow registerView = new RegisterWindow();
                 registerView.Owner = this;
                 Nullable<bool> result = registerView.ShowDialog();
                 return result.Value;
             }
+            Console.WriteLine("Product Code : {0}", productKey);
             return true;          
         }
 

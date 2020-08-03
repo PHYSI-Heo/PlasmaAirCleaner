@@ -16,7 +16,7 @@ namespace PAC_24Frame.Mqtt
 
         private MqttClient mqttClient = null;
 
-        private const string BROKER_IP = "192.168.1.12";
+        private const string BROKER_IP = "13.124.176.173";
 
         public void StartSubscribe()
         {

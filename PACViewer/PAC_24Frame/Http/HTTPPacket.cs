@@ -11,7 +11,8 @@ namespace PAC_24Frame.Http
         /*
          *      REST API
          */
-        private const string BaseUrl = "http://192.168.1.12:3000";
+        //private const string BaseUrl = "http://192.168.1.12:3000";
+        private const string BaseUrl = "http://13.124.176.173:3000";
 
         //  Web Server Url
         public const string Url_Create_ID = BaseUrl + "/identity/create";

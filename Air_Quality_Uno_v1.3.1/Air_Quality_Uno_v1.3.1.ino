@@ -51,9 +51,11 @@
 #define LED_NORMAL_COLOR    6
 #define LED_BAD_COLOR       0
 
+#define FILTER_BUF_SIZE     5
+
 SoftwareSerial dSerial(DUST_PMS7003_RX, DUST_PMS7003_TX);
-//U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_NONE);  // I2C / TWI 
-U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_DEV_0|U8G_I2C_OPT_FAST); // Dev 0, Fast I2C / TWI
+//U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_NONE);  // I2C / TWI
+U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_DEV_0 | U8G_I2C_OPT_FAST); // Dev 0, Fast I2C / TWI
 //U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_NO_ACK); // Display which does not send ACK
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(LED_PIXELs_SIZE, LED_PIN, NEO_GRB + NEO_KHZ800);
 
@@ -78,8 +80,7 @@ unsigned long plasmaToggleTime = 0;
 
 byte dustCount = 0;
 unsigned char dustData[30];
-float vocValue;
-int dustValue;
+int vocValue, dustValue;
 String vocStr = "000", dustStr = "000";
 
 /*
@@ -87,15 +88,19 @@ String vocStr = "000", dustStr = "000";
    1 - Auto Mode, 2 - Low Speed, 3 - Normal Speed, 4 - High Speed
 */
 int btnPressureCnt = 0;
-bool cleanEnable = false;
+bool cleanEnable = false;    //false;   //  true;
 int cleanMode = 0;
 int fanSpeed = 0;
 int autoSpeed = 0;
 
 int ledPos = 0;
 int colorRate;
-
 bool isDiscoveryI2C = true;
+
+int vocBuf[FILTER_BUF_SIZE];
+int dustBuf[FILTER_BUF_SIZE];
+int vocBufCnt = 0, dustBufCnt = 0;
+int avgVoc, avgDust;
 
 
 String dataLengthPad(int value) {
@@ -288,11 +293,11 @@ void accessI2C() {
   Wire.beginTransmission(OLED_ADDR);
   byte error = Wire.endTransmission();
   if (error != 0) {
-    Serial.print(F("oled error : "));
-    Serial.println(error);
+//    Serial.print(F("oled error : "));
+//    Serial.println(error);
     isDiscoveryI2C = false;
   } else if (!isDiscoveryI2C) {
-    Serial.println(F("u8g begin."));
+//    Serial.println(F("u8g begin."));
     u8g.begin();
     if (cleanEnable)
       showStatusText();
@@ -330,8 +335,8 @@ void showStatusText() {
       u8g.drawCircle(18, 50, 12);
 
     u8g.setFont(u8g_font_fur25n);
-    u8g.drawStr(44, 28, vocStr.c_str());
-    u8g.drawStr(44, 64, dustStr.c_str());
+    u8g.drawStr(44, 28, dataLengthPad(avgVoc).c_str());
+    u8g.drawStr(44, 64, dataLengthPad(avgDust).c_str());
   } while (u8g.nextPage());
   delay(50);
 }
@@ -363,19 +368,34 @@ void u8gPrepare(void) {
 /*
    Sensing Data
 */
+
+int dataFilter(int& cnt, int buf[], int val) {
+  int totalVal = val;
+  if (cnt >= FILTER_BUF_SIZE) {
+    for (int i = 1; i < FILTER_BUF_SIZE; i++) {
+      totalVal += buf[i];
+      buf[i - 1] = buf[i];
+    }
+    buf[FILTER_BUF_SIZE - 1] = val;
+  } else {
+    for (int i = 0; i < cnt; i++) {
+      totalVal += buf[i];
+    }
+    buf[cnt++] = val;
+  }
+  return totalVal / cnt;
+}
+
 void measureVOCSensor() {
   // http://wiki.seeedstudio.com/Grove-HCHO_Sensor/
   double Rs = (1023.0 / analogRead(VOC_HCHO_PIN)) - 1;
   double ppm = pow(10.0, ((log10(Rs / R0) - 0.0827) / (-0.4807)));
-  Serial.print(F("Rs : "));
-  Serial.print(Rs);
-  Serial.print(F("\tPPM : "));
-  Serial.println(ppm);
-  vocValue = (float)ppm;
-  String voc = dataLengthPad(int(vocValue * 10));
-  if (!voc.equals("000")) {
-    vocStr = voc;
-  }
+//  Serial.print(F("Rs : "));
+//  Serial.print(Rs);
+//  Serial.print(F("\tPPM : "));
+//  Serial.println(ppm);
+  vocValue = int((float)ppm * 10);
+  avgVoc = dataFilter(vocBufCnt, vocBuf, vocValue);
 }
 
 void measureDustSensor() {
@@ -397,15 +417,12 @@ void measureDustSensor() {
 
       if ( (unsigned int) dustData[27] == 0 ) {
         int PM25  = (dustData[10] << 8) + dustData[11];
-        if (PM25 > 0 && PM25 < 1000) {
-          dustValue = PM25;
-          Serial.print(F("Dust : "));
-          Serial.println(dustValue);
-          String dust = dataLengthPad(dustValue);
-          if (!dust.equals("000")) {
-            dustStr = dust;
-          }
-        }
+        if (PM25 < 0 || PM25 > 1000 || (dustValue != 0 && abs(dustValue - PM25) > 100))
+          return;
+        dustValue = PM25;
+//        Serial.print(F("Dust : "));
+//        Serial.println(dustValue);
+        avgDust = dataFilter(dustBufCnt, dustBuf, dustValue);
       }
     }
   }

@@ -2,7 +2,8 @@ package com.physi.pac.setter.http;
 
 public class HttpPacket {
 
-    private static final String BASEURL = "http://192.168.1.12:3000";
+//    private static final String BASEURL = "http://192.168.1.12:3000";
+    private static final String BASEURL = "http://13.124.176.173:3000";
 
     public static final String THUMBNAIL_BASE = BASEURL + "/thumb/";
     /*

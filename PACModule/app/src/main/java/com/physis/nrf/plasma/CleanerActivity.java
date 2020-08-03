@@ -25,13 +25,22 @@ public class CleanerActivity extends AppCompatActivity {
 
     private static final String TAG = CleanerActivity.class.getSimpleName();
 
+    private static final float VOC_LIMIT_GOOD_STATE = 1;
+    private static final float VOC_LIMIT_NORMAL_STATE = 6;
+    private static final float VOC_LIMIT_BAD_STATE = 9;
+
+
+    private static final int VOC_STATE_GOOD = 0;
+    private static final int VOC_STATE_NORMAL = 1;
+    private static final int VOC_STATE_BAD = 2;
+    private static final int VOC_STATE_VERY_BAD = 3;
+
     private TextView tvVocValue, tvCleanerName, tvVocStateMsg, tvVocStateBar;
     private ImageView ivBtnBack;
     private Button btnAuto, btnFanPower;
 
     private BluetoothLEManager bleManager;
 
-    private String vocValue;
     private boolean autoState, fanState;
     private int vocState = -1;
 
@@ -102,50 +111,56 @@ public class CleanerActivity extends AppCompatActivity {
 
     private void showFanState(String data){
         Log.e(TAG, "> Receive Message : " + data);
-        if(isNumber(data)){
-            showAutoState(data.charAt(0) == '1');
-            showFanState(data.charAt(1) == '1');
-            vocValue = data.substring(2);
-            tvVocValue.setText(vocValue);
-            showVocState(vocValue);
-        }
+        if(data.length() < 3)
+            return;
+        showAutoState(data.charAt(0) == '1');
+        showFanState(data.charAt(1) == '1');
+        String vocValue = data.substring(2);
+        setVocState(vocValue);
     }
 
     @SuppressLint("SetTextI18n")
-    private void showVocState(String value){
-        float voc = Float.valueOf(value);
-        int state;
-        if(voc < 1){
-            state = 0;
-        }else if(voc < 2){
-            state = 1;
-        }else if(voc < 3){
-            state = 2;
-        }else{
-            state = 3;
-        }
+    private void setVocState(String value){
+        float voc = Float.parseFloat(value);
 
+        if(voc < 0)
+            return;
+        tvVocValue.setText(value);
+
+        int state;
+        if(voc < VOC_LIMIT_GOOD_STATE){
+            state = VOC_STATE_GOOD;
+        }else if(voc < VOC_LIMIT_NORMAL_STATE){
+            state = VOC_STATE_NORMAL;
+        }else if(voc < VOC_LIMIT_BAD_STATE){
+            state = VOC_STATE_BAD;
+        }else{
+            state = VOC_STATE_VERY_BAD;
+        }
+        showVocEffect(state);
+    }
+
+    private void showVocEffect(int state){
         if(vocState == state)
             return;
-
         vocState = state;
         switch (vocState){
-            case 0:
+            case VOC_STATE_GOOD:
                 tvVocStateMsg.setText("GOOD");
                 tvVocStateMsg.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorFanState0));
                 tvVocStateBar.setBackgroundResource(R.color.colorFanState0);
                 break;
-            case 1:
+            case VOC_STATE_NORMAL:
                 tvVocStateMsg.setText("NORMAL");
                 tvVocStateMsg.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorFanState1));
                 tvVocStateBar.setBackgroundResource(R.color.colorFanState1);
                 break;
-            case 2:
+            case VOC_STATE_BAD:
                 tvVocStateMsg.setText("BAD");
                 tvVocStateMsg.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorFanState2));
                 tvVocStateBar.setBackgroundResource(R.color.colorFanState2);
                 break;
-            case 3:
+            case VOC_STATE_VERY_BAD:
                 tvVocStateMsg.setText("VERY BAD");
                 tvVocStateMsg.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorFanState3));
                 tvVocStateBar.setBackgroundResource(R.color.colorFanState3);
@@ -156,9 +171,7 @@ public class CleanerActivity extends AppCompatActivity {
     private void showAutoState(boolean state){
         if(state == autoState)
             return;
-
         autoState = state;
-
         if(autoState){
             btnAuto.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_auto_on, 0, 0);
             btnAuto.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorButtonEffect));
@@ -189,14 +202,6 @@ public class CleanerActivity extends AppCompatActivity {
         btnFanPower.setPadding(0, verticalPadding, 0, verticalPadding);
     }
 
-    private boolean isNumber(String data){
-        try{
-            double val = Double.parseDouble(data);
-            return true;
-        }catch (Exception e){
-            return false;
-        }
-    }
 
     private void init() {
         AnimationDrawable animDrawable = (AnimationDrawable) findViewById(R.id.layout_frame).getBackground();
